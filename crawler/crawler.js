@@ -46,10 +46,10 @@ function download(imgurl) {
 		});
 
 		res.on("end", function(){
-			var tmp = imgurl.split("/");
-			var filename = tmp[tmp.length-1];
-			tmp = filename.split("?");
-			filename = tmp[0];
+			var tmp = imgurl.split("?");
+			var filename = tmp[0];
+			tmp = filename.split("/");
+			filename = tmp[tmp.length - 1];
 			// console.log(filename);
 			// filename = uuid.v1() + ".jpg";
 			fs.writeFile("F:/imgs/nodejs/" + filename, imgData, "binary", function(err) {
