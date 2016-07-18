@@ -2,7 +2,7 @@
     <div>
         <Display></display>
         <Increment></Increment>
-        <Decrement></Decrement>
+        <de-crement></de-crement>
     </div>
 </template>
 
@@ -14,9 +14,9 @@
 
     export default {
         components : {
-            Display : Display,
-            Increment : Increment,
-            Decrement : Decrement,
+            display : Display,
+            increment : Increment,
+            deCrement : Decrement,
         },
         store : store
     }
