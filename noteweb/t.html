@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Notes | coligo.io</title>
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+    <style media="screen">
+    #toolbar {
+      /*float: left;*/
+      /*width: 80px;*/
+      height: 100%;
+      /*background-color: #abcdef;*/
+      /*color: #767676;*/
+      text-align: center;
+      padding: 10px 25px 35px 25px;
+    }
+    #toolbar i {
+        font-size: 20px;
+        margin-bottom: 35px;
+        cursor: pointer;
+        opacity: 0.8;
+        transition: opacity 0.5s ease;
+    }
+
+    #toolbar i:hover {
+        opacity: 1;
+    }
+    </style>
+  </head>
+  <body>
+      <div class="row">
+
+          <div class="col-md-1" id="toolbar">
+              <i class="glyphicon glyphicon-plus col-xs-4 col-md-12">add</i>
+              <i class="glyphicon glyphicon-star col-xs-4 col-md-12">star</i>
+              <i class="glyphicon glyphicon-remove col-xs-4 col-md-12">del</i>
+          </div>
+
+          <div class="col-md-2">
+              <div class="row">
+                  <div class="col-md-10 col-xs-10 col-md-offset-1 col-xs-offset-1">
+                      <h3 style="text-align: center;">Notes | Remember</h3>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-8 col-xs-8 col-md-offset-2 col-xs-offset-2">
+                      <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                          <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default">All</button>
+                          </div>
+                          <div class="btn-group" role="group">
+                              <button type="button" class="btn btn-default">favorite</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <br>
+              <div class="row">
+                  <div class="col-md-10 col-xs-10 col-md-offset-1 col-xs-offset-1">
+                      <ul class="list-group">
+                          <li class="list-group-item">Cras justo odio</li>
+                          <li class="list-group-item">Dapibus ac facilisis in</li>
+                          <li class="list-group-item">Morbi leo risus</li>
+                          <li class="list-group-item">Porta ac consectetur ac</li>
+                          <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-9">
+              <div class="row">
+                  <textarea style="margin-left:50px;border-radius:0;border:1;" name="name" rows="8" cols="40">
+
+                  </textarea>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>
