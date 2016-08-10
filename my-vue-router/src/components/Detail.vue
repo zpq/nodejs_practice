@@ -3,6 +3,8 @@
 	<h3>id : {{item.id}}</h3>
 	<h3>名称 : {{item.name}}</h3>
 	<h3>价格 : {{item.price}}</h3>
+	<button @click="goIndex">goIndex</button>
+	<button @click="goList">goDetail</button>
 </template>
 
 <script>
@@ -21,5 +23,13 @@ export default  {
 			item : {}
 		}
 	},
+	methods : {
+		goIndex () {
+			this.$route.router.go({name : "index"});
+		},
+		goList() {
+			this.$route.router.go({name : "list"});
+		}
+	}
 }
 </script>

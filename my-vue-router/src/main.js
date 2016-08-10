@@ -8,12 +8,14 @@ var router = new VueRouter();
 
 import List from './components/List'
 import Detail from './components/Detail'
-import Hello from './components/Hello'
+// import Hello from './components/Hello'
+
+var Root = Vue.extend({});
 
 router.map({
 	'/index' : {
 		name : 'index',
-		component : Hello
+		component : App,
 	},
 	'/list' : {
 		name : 'list',
@@ -29,4 +31,4 @@ router.redirect({
 	"*" : "/index"
 })
 
-router.start(App, '#app')
+router.start(Root, '#app')

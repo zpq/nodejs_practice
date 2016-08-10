@@ -13,6 +13,7 @@
 			</td>
 		</tr>
 	</table>
+	<button @click="goIndex">返回首页</button>
 </template>
 
 <script>
@@ -31,6 +32,11 @@ export default {
 		var stockLists = JSON.parse(localStorage.getItem('stockLists'));
 		if (!stockLists || stockLists.length == 0) {
 			localStorage.setItem('stockLists', JSON.stringify(this.lists));
+		}
+	},
+	methods : {
+		goIndex () {
+			this.$route.router.go({name : "index"});
 		}
 	}
 }
