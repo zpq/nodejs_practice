@@ -14,7 +14,7 @@ export default {
         commit(types.SAVE_PLAN, plan)
     },
 
-    deletePlan( {commit}, plan) {
-        commit(types.DELETE_PLAN, plan)
+    deletePlan( {commit}, idx) {
+        commit(types.DELETE_PLAN, idx)
     }
 }

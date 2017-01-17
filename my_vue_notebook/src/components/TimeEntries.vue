@@ -72,7 +72,7 @@ export default {
         }
     },
     methods: {
-        detelePlan(idx) {
+        deletePlan(idx) {
             this.$store.dispatch('decTotalTime', this.plans[idx].totalTime)
             this.$store.dispatch('deletePlan', idx)
         }
