@@ -5,14 +5,14 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('ssoServer:server');
+var debug = require('debug')('sysa:server');
 var http = require('http');
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '20000');
+var port = normalizePort(process.env.PORT || '20001');
 app.set('port', port);
 
 /**
